@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  
+  "name": "kore chatbot pop-up",
+  "description": "This extension will append the Kore SDK to display a chabtot widget.",
+  "version": "1.0",
+  
+  "content_scripts": [    
+  { "run_at" :"document_end",
+  "matches": ["https://*/*"],
+  "js": ["jquery-1.11.3.js","script.js"],
+  "css":["mycss.css"]
+  } ],
+
+  
+  "web_accessible_resources":["images/*.png"]
+  }
